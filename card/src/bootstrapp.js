@@ -1,7 +1,7 @@
 import faker from 'faker';
 
 const mount = (el) => {
-    let message = `<div>You have 5 items in your card.</div>`;
+    let message = `<div>You have ${faker.datatype.number({ min: 1, max: 10 })} items in your card.</div>`;
 
     el.innerHTML = message;
 };
